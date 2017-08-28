@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Order | Vinnie's Pizza</title>
+  	<script src="js/jquery-3.2.1.js"></script>
+  	<link rel="stylesheet" href="css/bootstrap.css">
+  	<link rel="stylesheet" href="css/styles.css">
+  	<script src="js/scripts.js"></script>
+		<link rel="icon" href="img/logo_final3_Ver_icon.ico">
+  </head>
+  <body>
+		<div class="wrapper">
+    <div class="header page-header">
+      <h1 class="name">Vinnie's <img src="img/logo-final3.png" alt="Logo"> Pizza</h1>
+      <h2>Authentic New York Pizza</h2>
+    </div>
+    <div class="container">
+			<h3>Online Order</h3>
+			<div class="textbreak"></div>
+      <div class="launch-order">
+        <h3>Pick-Up Order</h3>
+        <p><em>Please call at least 30 minutes in advance</em></p>
+        <button type="button" class="btn btn-success">Begin Order</button>
+      </div>
+      <div class="order-information-input initially-hidden">
+        <h3>Customer Information</h3>
+        <form>
+          <div class="form-group">
+            <label for="name">Name: </label>
+            <input id="name" type="text">
+          </div>
+          <div class="form-group">
+            <label for="street">Address: </label>
+            <input id="street" type="text">
+          </div>
+          <div class="form-group">
+            <label for="city">City:</label>
+            <input id="city" type="text">
+          </div>
+          <div class="form-group">
+            <label for="zip-code">Zip Code: </label>
+            <input id="zip-code" type="number">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number: </label>
+            <input id="phone" type="number" placeholder="(555)-555-5555">
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+      <div class="order-pizza-input initially-hidden">
+        <form>
+          <div class="size form-group">
+            <h4>Size:</h4>
+						<label class="checkbox-inline"><input type="radio" name="pizza-size" value="Mini"  checked> Mini ($9)</label>
+            <label class="checkbox-inline"><input type="radio" name="pizza-size" value="Small"> Small ($12)</label>
+            <label class="checkbox-inline"><input type="radio" name="pizza-size" value="Medium"> Medium ($15)</label>
+            <label class="checkbox-inline"><input type="radio" name="pizza-size" value="Large"> Large ($18)</label>
+            <label class="checkbox-inline"><input type="radio" name="pizza-size" value="Giant"> Giant ($22)</label>
+          </div><br>
+          <div class="meat-toppings form-group">
+            <h4>Meats: ($1.25 each) </h4>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="meat-toppings" value="Bacon">Bacon
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="meat-toppings" value="Ham">Ham
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="meat-toppings" value="Meatball">Meatball
+						</label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Pepperoni">Pepperoni
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Sausage">Sausage
+            </label>
+          </div><br>
+          <div class="veg-toppings form-group">
+            <h4>Veggies: ($0.75 each) </h4>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="veg-toppings" value="Banana Peppers">Banana Peppers
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="veg-toppings" value="Basil">Basil
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="veg-toppings" value="Green Peppers">Green Peppers
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="veg-toppings" value="Mushrooms">Mushrooms
+						</label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veg-toppings" value="Olives">Olives
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veg-toppings" value="Onions">Onions
+            </label>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="veg-toppings" value="Pineapple">Pineapple
+						</label>
+						<label class="checkbox-inline">
+              <input type="checkbox" name="veg-toppings" value="Tomatoes">Tomatoes
+            </label>
+          </div><br>
+					<div class="gourmet-toppings form-group">
+						<h4>Gourmet: ($1.75 each) </h4>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="gourmet-toppings" value="Feta Cheese">Feta Cheese
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="gourmet-toppings" value="Grilled Chicken">Grilled Chicken
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="gourmet-toppings" value="Prosciutto">Prosciutto
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="gourmet-toppings" value="Rum Ham">Rum Ham
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="gourmet-toppings" value="Spinach">Spinach
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" name="gourmet-toppings" value="Sun-Dried Tomatoes">Sun-Dried Tomatoes
+						</label>
+					</div><br>
+          <div class="cheese form-group">
+            <h4>Cheese:</h4>
+            <label class="checkbox">
+							<input type="radio" name="cheese-options" value="Regular" checked> Regular</label>
+            <label class="checkbox"><input type="radio" name="cheese-options" value="Extra">  Extra Cheese (add $1)</label>
+          </div><br>
+					<div class="appetizers form-group">
+						<h4>Add Breadsticks:</h4>
+						<label class="checkbox"><input type="radio" name="appetizer-options" value="None" checked> No Appetizer</label>
+						<label class="checkbox"><input type="radio" name="appetizer-options" value="Breadsticks"> Breadsticks ($6)</label>
+					</div><br>
+					<div class="comment form-group" id="textarea">
+  					<label for="comment">Requests for Order:</label>
+  					<textarea class="form-control" id="comment" placeholder="Crispy, toppings on side, etc."></textarea>
+					</div>
+          <button type="submit" class="btn btn-success">Add Pizza</button>
+        </form>
+      </div>
+      <div class="summary initially-hidden">
+        <h3>Your order:</h3>
+        <p><em>Click on a name to view details.</em></p>
+        <div class="pizza-list"></div>
+        <h3>Total Cost: <span id="pizza-list-total-cost"></span></h3>
+        <button id="add-pizza" class="btn btn-success">Add Person</button>
+        <button id="confirm-order" class="btn btn-success">Confirm Order</button>
+      </div>
+      <div class="checked-out  initially-hidden">
+        <h3>Thank you for your order</h3>
+        <p>You will be recieving a confirmation call soon.</p>
+        <button type="button" class="btn btn-success" id="refresh">That was fun!</button>
+      </div>
+    </div>
+		<div class="footerspace"></div>
+		</div>
+  </body>
+</html>
