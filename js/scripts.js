@@ -6,7 +6,7 @@
 //                  Back End                   //
 // =========================================== //
 
-var name = prompt("Enter a name");
+var name = "";
 
 function Pizza(pizzaSize, cheese, appetizer) {
   this.pizzaSize = pizzaSize;
@@ -183,6 +183,7 @@ $(document).ready(function() {
   var customerOrder = new Order();
 
   $('.launch-order button').click(function() {
+    name = prompt("Enter a name");
     toggle('.launch-order', '.order-information-input');
   });
 
